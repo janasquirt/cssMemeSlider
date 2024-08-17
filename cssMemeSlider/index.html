@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>CSS Meme Slider</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Meme Slider</h1>
+    </header>
+    <main>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="memes">
+            <div class="meme" id="meme0">
+              <img src="./images/meme0.webp" alt="meme 0 image" />
+              <p class="caption">i love javascript</p>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <input type="radio" class="control" checked />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 CSS Meme Slider</p>
+    </footer>
+  </body>
 </html>
