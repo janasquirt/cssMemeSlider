@@ -20,48 +20,96 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  width: 90%;
-  max-width: 60rem;
-  margin: 0 auto;
+  width: 80%;
+  max-width: 60em;
+  padding: 5%;
+  border-radius: 2em;
+  background-color: #ccc;
 }
 
 .slider-meme {
   width: 100%;
   height: auto;
+  border-radius: 1em;
   overflow: hidden;
 }
 
 .memes {
   display: flex;
+  width: 400%;
+  transition: 0.3s ease-in-out;
 }
 
-.meme-image {
-  width: 100%;
+.meme {
+  width: 25%;
   height: auto;
-  border-radius: 2rem;
 }
 
 .slider-caption {
   width: 70%;
   height: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .captions {
   display: flex;
   flex-wrap: nowrap;
   width: 400%;
+  transition: 0.3s ease-in-out;
 }
 
 .caption {
   width: 25%;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .slider-control {
   display: flex;
   justify-content: flex-end;
   width: 30%;
+  margin-top: 2em;
+}
+
+.control-input {
+  display: none;
+}
+
+.slider:has(#meme0:checked) .memes,
+.slider:has(#meme0:checked) .captions {
+  transform: translateX(0);
+}
+
+.slider:has(#meme1:checked) .memes,
+.slider:has(#meme1:checked) .captions {
+  transform: translateX(-25%);
+}
+
+.slider:has(#meme2:checked) .memes,
+.slider:has(#meme2:checked) .captions {
+  transform: translateX(-50%);
+}
+
+.slider:has(#meme3:checked) .memes,
+.slider:has(#meme3:checked) .captions {
+  transform: translateX(-75%);
+}
+
+.control-label {
+  width: 2em;
+  height: 2em;
+  background-color: #333;
+  border-radius: 50%;
+  border: 0.5em solid #ccc;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.control-label:hover {
+  background-color: green;
+}
+
+.control-input:checked + .control-label {
+  background-color: red;
 }
 
 @media (max-width: 1023px) {
