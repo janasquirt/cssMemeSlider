@@ -1,65 +1,77 @@
 body {
-    font-family: 'Kablammo', system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header,
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slider-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .slider {
-    position: relative;
-    overflow: hidden;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.slider-meme {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.memes {
+  display: flex;
+}
+
+.meme-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.slider-caption {
+  width: 70%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.captions {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400%;
+}
+
+.caption {
+  width: 25%;
+  font-size: 1.5rem;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+@media (max-width: 1023px) {
+  .slider-caption {
     width: 100%;
-    height: auto;
+    order: 1;
   }
-  
-  .memes {
-    display: flex;
-  }
-  
-  .meme {
-    min-width: 100%;
-  }
-  
-  .meme img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .caption {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-  
-  .controls {
-    display: flex;
+
+  .slider-control {
     justify-content: center;
-    margin-top: 1rem;
+    width: 100%;
   }
-  
+}

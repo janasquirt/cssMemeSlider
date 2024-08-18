@@ -6,33 +6,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <title>CSS Meme Slider</title>
   </head>
   <body>
-    <header>
-      <h1>CSS Meme Slider</h1>
-    </header>
     <main>
-      <div class="slider-container">
-        <div class="slider">
+      <div class="slider">
+        <div class="slider-meme">
           <div class="memes">
-            <div class="meme" id="meme0">
-              <img src="./images/meme0.webp" alt="meme 0 image" />
-              <p class="caption">i love javascript</p>
-            </div>
+            <img
+              class="meme-image"
+              src="./images/meme0.webp"
+              alt="first meme image"
+            />
+            <img
+              class="meme-image"
+              src="./images/meme1.webp"
+              alt="second meme image"
+            />
+            <img
+              class="meme-image"
+              src="./images/meme2.webp"
+              alt="third meme image"
+            />
+            <img
+              class="meme-image"
+              src="./images/meme0.webp"
+              alt="fourth meme image"
+            />
           </div>
         </div>
-        <div class="controls">
+        <div class="slider-caption">
+          <div class="captions">
+            <p class="caption">I love JavaScript 🖤</p>
+            <p class="caption">I love JavaScript 🖤</p>
+            <p class="caption">I love JavaScript 🖤</p>
+            <p class="caption">I love JavaScript 🖤</p>
+          </div>
+        </div>
+        <div class="slider-control">
           <input type="radio" class="control" checked />
+          <input type="radio" class="control" />
+          <input type="radio" class="control" />
+          <input type="radio" class="control" />
         </div>
       </div>
     </main>
-    <footer>
-      <p>© 2024 CSS Meme Slider</p>
-    </footer>
   </body>
 </html>
