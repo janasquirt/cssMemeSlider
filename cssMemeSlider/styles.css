@@ -67,11 +67,31 @@ main {
   display: flex;
   justify-content: flex-end;
   width: 30%;
-  margin-top: 2em;
 }
 
 .control-input {
   display: none;
+}
+
+.control-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin: 2em 0.5em 0;
+  border-radius: 50%;
+  background-color: blue;
+  background-clip: content-box;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.control-span {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
 }
 
 .slider:has(#meme0:checked) .memes,
@@ -94,22 +114,16 @@ main {
   transform: translateX(-75%);
 }
 
-.control-label {
-  width: 2em;
-  height: 2em;
-  background-color: #333;
-  border-radius: 50%;
-  border: 0.5em solid #ccc;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
 .control-label:hover {
-  background-color: green;
+  background-color: white;
 }
 
-.control-input:checked + .control-label {
-  background-color: red;
+.control-label:active {
+  transform: scale(1.5);
+}
+
+.control-input:checked + .control-label .control-span {
+  background-color: #ccc;
 }
 
 @media (max-width: 1023px) {
