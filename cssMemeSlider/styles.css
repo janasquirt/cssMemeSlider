@@ -118,6 +118,30 @@ main {
   transform: translateX(-75%);
 }
 
+.slider:has(#meme0:checked) .caption:nth-child(1),
+.slider:has(#meme1:checked) .caption:nth-child(2),
+.slider:has(#meme2:checked) .caption:nth-child(3),
+.slider:has(#meme3:checked) .caption:nth-child(4) {
+  animation: fadeIn 0.3s forwards;
+  animation-delay: 0.2s;
+}
+
+.slider:has(#meme0:checked) .caption,
+.slider:has(#meme1:checked) .caption,
+.slider:has(#meme2:checked) .caption,
+.slider:has(#meme3:checked) .caption {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .control-label:hover {
   background-color: white;
 }
