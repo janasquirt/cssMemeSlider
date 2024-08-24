@@ -1,2 +1,2 @@
 # cssMemeSlider
-CSS meme slider
+CSS meme slider: https://nesralatut.github.io/cssMemeSlider/cssMemeSlider/
