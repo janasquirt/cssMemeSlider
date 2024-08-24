@@ -21,7 +21,7 @@ main {
 .slider {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: center;
   width: 80%;
   max-width: 60rem;
   padding: 5%;
@@ -63,7 +63,7 @@ main {
 
 .caption {
   width: 25%;
-  padding: 0 0.5rem;
+  padding-left: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -84,7 +84,7 @@ main {
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
-  margin: 2rem 0.5rem 0;
+  margin: 0 0.25rem;
   border-radius: 50%;
   background-color: #41a9f1;
   background-clip: content-box;
@@ -163,6 +163,7 @@ main {
   .slider-control {
     justify-content: center;
     width: 100%;
+    margin-top: 2rem;
   }
 }
 
